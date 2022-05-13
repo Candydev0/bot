@@ -1,4 +1,6 @@
-const mysql= require("../mysql.js");
+const path = require('path');
+const dirPath = path.join(__dirname, '../mysql.js');
+const mysql= require(dirPath);
 const start = (msg)=>{
 const join_text= `💡 You must join our channel
 
