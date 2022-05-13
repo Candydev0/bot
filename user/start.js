@@ -16,7 +16,7 @@ const start = (msg)=>{
   var sql= "SELECT * FROM `users` WHERE id="+msg.message.chat.id;
   mysql.query(sql, function (err, result, fields) {
       if(result.length!=1){
-        msg.reply(join_text);
+        msg.replyWithHTML(join_text);
       }else{
         msg.reply("old user");
       }
