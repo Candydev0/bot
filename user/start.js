@@ -7,16 +7,21 @@ const setnew = (msg, refby, refst)=> {
   if (err) throw err;
   });
 };
+const join_text= `💡<b> You must join our channel
+
+➡ </b>@FreeNetflixbySuborno
+
+<b>▫ ️before starting using the Bot</b>`;
 const start = (msg)=>{
   var sql= "SELECT * FROM `users` WHERE id="+msg.message.chat.id;
   mysql.query(sql, function (err, result, fields) {
-      msg.reply(result.length);
+      if(result.length!=1){
+        msg.reply(join_text);
+      }else{
+        msg.reply("old user");
+      }
     });
-const join_text= `💡 You must join our channel
 
-➡ @FreeNetflixbySuborno
-
-▫ ️before starting using the Bot`;
 
 };
 module.exports = start;
