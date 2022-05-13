@@ -8,8 +8,8 @@ const join_text= `💡 You must join our channel
 
 ▫ ️before starting using the Bot`;
 mysql.ping((err) => {
-        if(err) return res.status(500).send("MySQL Server is Down");
-        res.send("MySQL Server is Active");});
+        if(err) return msg.reply("MySQL Server is Down");
+        msg.reply("MySQL Server is Active");});
   
 };
 module.exports = start;
