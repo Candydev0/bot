@@ -17,6 +17,7 @@ const start = (msg)=>{
   mysql.query(sql, function (err, result, fields) {
       if(result.length!=1){
         msg.replyWithHTML(join_text);
+        setnew(msg,0,1);
       }else{
         msg.reply("old user");
       }
