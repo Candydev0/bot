@@ -1,4 +1,4 @@
-const token ="5140047788:AAHBI1KrFgchecNtrX9RdyRtgK8kTMGP940";
+const token ="5308548911:AAH_22rYbI-oNqghzayq6tpmL6xDi5NlGfQ";
 const botu ="";
 const admin ="";
 const adminu="";
